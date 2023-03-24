@@ -5,6 +5,7 @@ generateQr = () => {
   let qrImg=document.getElementById('qrImg');
   
   if (qrText.value.length > 0) {
+    qrImg.classList.remove('qr-image');
     qrBox.classList.add('qr-box')
     errMsg.style.visibility = 'hidden';
     qrImg.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+qrText.value;
