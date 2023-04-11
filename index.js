@@ -8,7 +8,7 @@ generateQr = () => {
     qrImg.classList.remove('qr-image');
     qrBox.classList.add('qr-box')
     errMsg.style.visibility = 'hidden';
-    qrImg.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+qrText.value;
+    qrImg.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+'https://'+qrText.value;
 
   }
 
